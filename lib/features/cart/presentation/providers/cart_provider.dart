@@ -21,6 +21,10 @@ class CartProvider extends ChangeNotifier {
   List<CartItem> get items => _items;
   int get itemCount => _items.fold(0, (sum, e) => sum + e.qty);
   double get totalPrice => _items.fold(0, (sum, e) => sum + (e.price * e.qty));
+  
+  bool isInCart(int productId) {
+  return _items.any((e) => e.productId == productId);
+}
 
   void addItem(ProductModel product) {
     final idx = _items.indexWhere((e) => e.productId == product.id);

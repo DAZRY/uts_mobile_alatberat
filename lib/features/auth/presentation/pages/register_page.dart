@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:uts_mobile_alatberat/features/auth/presentation/providers/auth_providers.dart';
+import 'package:uts_mobile_alatberat/features/auth/presentation/providers/auth_provider.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});

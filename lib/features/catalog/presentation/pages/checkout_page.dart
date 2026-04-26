@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:http/http.dart' as http;
-import 'package:uts_mobile_alatberat/features/auth/presentation/providers/auth_providers.dart';
+import 'package:uts_mobile_alatberat/features/auth/presentation/providers/auth_provider.dart';
 import 'package:uts_mobile_alatberat/features/auth/presentation/providers/cart_provider.dart';
 import 'package:uts_mobile_alatberat/core/constants/api_constants.dart';
 
