@@ -32,12 +32,12 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
-        title: const Text('MyCatalog', style: TextStyle(fontWeight: FontWeight.bold)),
+        title: const Text('Katalog Alat Berat', style: TextStyle(fontWeight: FontWeight.bold)),
         actions: [
           Stack(
             children: [
               IconButton(
-                icon: const Icon(Icons.shopping_cart),
+               q icon: const Icon(Icons.shopping_cart),
                 onPressed: () => Navigator.pushNamed(context, '/cart'),
               ),
               if (cart.itemCount > 0)
@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                       child: GridView.builder(
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
-                          childAspectRatio: 0.72,
+                          childAspectRatio: 0.65,
                           crossAxisSpacing: 12,
                           mainAxisSpacing: 12,
                         ),
@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                                   child: p.imageUrl != null && p.imageUrl!.isNotEmpty
                                       ? Image.network(
                                           p.imageUrl!,
-                                          height: 130,
+                                          height: 150,
                                           width: double.infinity,
                                           fit: BoxFit.cover,
                                           errorBuilder: (_, __, ___) => Container(
