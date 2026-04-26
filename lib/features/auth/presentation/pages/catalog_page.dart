@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uts_mobile_alatberat/core/routes/app_router.dart';
 import 'package:uts_mobile_alatberat/features/cart/domain/entities/product.dart';
-import 'package:uts_mobile_alatberat/features/cart/presentation/widget/add_button_widget.dart';
+import 'package:uts_mobile_alatberat/features/auth/presentation/widget/add_button_widget.dart';
 
 class CatalogPage extends StatelessWidget {
   const CatalogPage({super.key});

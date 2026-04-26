@@ -2,8 +2,8 @@
 // Setelah refactor: dipindah ke file terpisah
 
 import 'package:flutter/material.dart';
-import 'package:uts_mobile_alatberat/features/cart/presentation/pages/cart_page.dart';
-import 'package:uts_mobile_alatberat/features/cart/presentation/pages/catalog_page.dart';
+import 'package:uts_mobile_alatberat/features/auth/presentation/pages/cart_page.dart';
+import 'package:uts_mobile_alatberat/features/auth/presentation/pages/catalog_page.dart';
 
 class AppRouter {
   static const String catalog = '/';

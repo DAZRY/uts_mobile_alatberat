@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:uts_mobile_alatberat/features/cart/domain/entities/product.dart';
-import 'package:uts_mobile_alatberat/features/cart/presentation/providers/cart_provider.dart';
+import 'package:uts_mobile_alatberat/features/auth/presentation/providers/cart_provider.dart';
 
 class AddButtonWidget extends StatelessWidget {
   final Product product;
