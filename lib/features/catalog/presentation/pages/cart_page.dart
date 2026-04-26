@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:uts_mobile_alatberat/features/auth/presentation/providers/cart_provider.dart';
 import 'package:uts_mobile_alatberat/features/catalog/presentation/providers/cart_provider.dart';
 import 'checkout_page.dart';
 

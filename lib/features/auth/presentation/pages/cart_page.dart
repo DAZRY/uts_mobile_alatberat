@@ -32,7 +32,7 @@ class CartPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(20),
             child: ElevatedButton(
-              onPressed: () => cart.removeAll(),
+              onPressed: () => cart.removeItem(),
               style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
               child: const Text(
                 'Hapus Keranjang',

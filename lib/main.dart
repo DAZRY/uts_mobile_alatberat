@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
+import 'package:uts_mobile_alatberat/features/auth/presentation/providers/auth_providers.dart';
+import 'package:uts_mobile_alatberat/features/auth/presentation/providers/catalog_provider.dart';
 import 'firebase_options.dart';
 import 'features/auth/presentation/providers/auth_provider.dart';
 import 'features/cart/presentation/providers/cart_provider.dart';
