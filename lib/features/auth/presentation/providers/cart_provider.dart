@@ -1,28 +1,48 @@
-// Provider/Notifier: jembatan antara domain dan UI
-// Menggunakan CartRepository, bukan langsung manipulasi data
-
 import 'package:flutter/material.dart';
-import 'package:uts_mobile_alatberat/features/cart/domain/entities/product.dart';
-import 'package:uts_mobile_alatberat/features/cart/domain/repositories/cart_repository.dart';
+import '../../../catalog/domain/product_model.dart';
+
+class CartItem {
+  final int productId;
+  final String name;
+  final double price;
+  int qty;
+
+  CartItem({
+    required this.productId,
+    required this.name,
+    required this.price,
+    this.qty = 1,
+  });
+}
 
 class CartProvider extends ChangeNotifier {
-  final CartRepository _repository;
+  final List<CartItem> _items = [];
 
-  // Dependency Injection melalui constructor
-  CartProvider({required CartRepository repository}) 
-      : _repository = repository;
-  List<Product> get items => _repository.getCartItems();
+  List<CartItem> get items => _items;
+  int get itemCount => _items.fold(0, (sum, e) => sum + e.qty);
+  double get totalPrice => _items.fold(0, (sum, e) => sum + (e.price * e.qty));
 
-  void addItem(Product product) {
-    _repository.addItem(product);
+  void addItem(ProductModel product) {
+    final idx = _items.indexWhere((e) => e.productId == product.id);
+    if (idx >= 0) {
+      _items[idx].qty++;
+    } else {
+      _items.add(CartItem(
+        productId: product.id,
+        name:      product.name,
+        price:     product.price,
+      ));
+    }
     notifyListeners();
   }
 
-  void removeAll() {
-    _repository.removeAllItems();
+  void removeItem(int productId) {
+    _items.removeWhere((e) => e.productId == productId);
     notifyListeners();
   }
 
-  bool isInCart(String productId) => 
-      _repository.isItemInCart(productId);
+  void clearCart() {
+    _items.clear();
+    notifyListeners();
+  }
 }
