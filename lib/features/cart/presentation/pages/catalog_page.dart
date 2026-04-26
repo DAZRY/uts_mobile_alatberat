@@ -6,15 +6,15 @@ import 'package:uts_mobile_alatberat/features/cart/presentation/widget/add_butto
 class CatalogPage extends StatelessWidget {
   const CatalogPage({super.key});
   static final List<Product> _products = [
-    Product(id: '1', name: 'Nasi Goreng', price: 15000),
-    Product(id: '2', name: 'Sate Ayam', price: 20000),
-    Product(id: '3', name: 'Es Teh', price: 5000),
+    Product(id: '1', name: 'Excavator', price: 750000000),
+    Product(id: '2', name: 'Vibrator Roller', price: 400000000),
+    Product(id: '3', name: 'Crane', price: 950000000),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Katalog Makanan'),
+        title: const Text('Katalog Alat Berat'),
         actions: [
           IconButton(
             icon: const Icon(Icons.shopping_cart),
