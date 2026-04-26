@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:uts_mobile_alatberat/features/auth/presentation/providers/auth_provider.dart';
-import 'package:uts_mobile_alatberat/features/auth/presentation/providers/catalog_provider.dart';
-import '../../../cart/presentation/providers/cart_provider.dart';
+import 'package:uts_mobile_alatberat/features/catalog/presentation/providers/catalog_provider.dart';
+import 'package:uts_mobile_alatberat/features/cart/presentation/providers/cart_provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

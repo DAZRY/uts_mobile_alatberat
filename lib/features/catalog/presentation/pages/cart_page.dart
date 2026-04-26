@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:uts_mobile_alatberat/features/auth/presentation/providers/cart_provider.dart';
-import 'checkout_page.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -47,8 +46,7 @@ class CartPage extends StatelessWidget {
                       SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: () => Navigator.push(context,
-                            MaterialPageRoute(builder: (_) => const CheckoutPage())),
+                          onPressed: () => Navigator.pushNamed(context, '/checkout'),
                           child: const Text('Checkout'),
                         ),
                       ),

@@ -16,7 +16,7 @@ class ProductModel {
   });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) => ProductModel(
-    id:          json['id'],
+    id:          json['ID'] ?? json['id'],        // ← pakai ID huruf besar
     name:        json['name'] ?? '',
     price:       (json['price'] as num).toDouble(),
     imageUrl:    json['image_url'],
