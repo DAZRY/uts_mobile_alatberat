@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:uts_mobile_alatberat/features/auth/presentation/pages/cart_page.dart';
-import 'package:uts_mobile_alatberat/features/auth/presentation/providers/auth_provider.dart';
 import 'package:uts_mobile_alatberat/features/auth/presentation/providers/auth_providers.dart';
 import 'package:uts_mobile_alatberat/features/auth/presentation/providers/catalog_provider.dart';
 import 'package:uts_mobile_alatberat/features/cart/presentation/providers/cart_provider.dart';
-import '../../presentation/providers/catalog_provider.dart';
-import 'package:uts_mobile_alatberat/features/cart/presentation/pages/cart_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
