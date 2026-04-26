@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "818955481785",
+    "project_id": "uts-mobile-alatberat",
+    "storage_bucket": "uts-mobile-alatberat.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818955481785:android:2b6779e949d4e1d3d3a168",
+        "android_client_info": {
+          "package_name": "com.lendra.uts_alatberat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818955481785-kl92qj97rdvul2s6fhd1952lf2s1qo4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPX4Dc-RIYajg6rWcjEfeCM0DceTn3PYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818955481785-kl92qj97rdvul2s6fhd1952lf2s1qo4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
