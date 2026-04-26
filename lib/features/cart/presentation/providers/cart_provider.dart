@@ -2,8 +2,8 @@
 // Menggunakan CartRepository, bukan langsung manipulasi data
 
 import 'package:flutter/material.dart';
-import 'package:provider_app/features/cart/domain/entities/product.dart';
-import 'package:provider_app/features/cart/domain/repositories/cart_repository.dart';
+import 'package:uts_mobile_alatberat/features/cart/domain/entities/product.dart';
+import 'package:uts_mobile_alatberat/features/cart/domain/repositories/cart_repository.dart';
 
 class CartProvider extends ChangeNotifier {
   final CartRepository _repository;

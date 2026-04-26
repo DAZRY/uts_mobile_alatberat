@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_app/features/cart/presentation/providers/cart_provider.dart';
+import 'package:uts_mobile_alatberat/features/cart/presentation/providers/cart_provider.dart';
 
 // Halaman Keranjang
 class CartPage extends StatelessWidget {
