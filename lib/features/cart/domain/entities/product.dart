@@ -1,0 +1,13 @@
+// Entity: representasi murni objek bisnis
+// Tidak bergantung pada framework atau package apapun
+class Product {
+  final String id;
+  final String name;
+  final double price;
+
+  const Product({
+    required this.id, 
+    required this.name, 
+    required this.price,
+    });
+}
